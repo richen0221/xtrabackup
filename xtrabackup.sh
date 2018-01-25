@@ -1,7 +1,7 @@
 #!/bin/bash
 ######################################################################################
 # This script is for Xtrabackup tool backup and restore.                             #
-# Please install the Xtrabackup and setup the proper DB persmiison on your database. #
+# Please install the Xtrabackup and setup the proper DB persmiisons on your database.#
 # For further information please refer the Xtrabackup official site.                 #
 # https://www.percona.com/doc/percona-xtrabackup/LATEST/index.html                   #
 ######################################################################################
@@ -15,8 +15,11 @@
 ######################################################################################
 
 ### Variables area ### please keep the "/" in the end of directory variable
+# Your backup target directory
 BASEDIR=/home/backupdb/
+# The DB's work folder e.g.: /var/lib/mysql/
 MYSQL_DIR=/home/mysql/
+# Please follow the Percona Xtrabackup official document to create the user for backup with proper privileges
 DB_USER=backup
 DB_PASSWORD=backup!@#
 
